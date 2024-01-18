@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <title>Arithmetic</title>
+</head>
+
+<body>
+    <section>
+        <h1>Arithmetic</h1>
+
+        <input id="first">
+        <span> + </span>
+        <input id="second">
+        <button onclick="getSum()">=</button>
+        <span id="sum"></span>
+    </section>
+
+    <script>
+        function getSum() {
+            let first = parseFloat(document.getElementById("first").value);
+            let second = parseFloat(document.getElementById("second").value);
+
+            // calculate sum
+            let sum = Number(first) + Number(second);
+
+            // update sum value
+            document.getElementById("sum").innerHTML = sum;
+        }
+    </script>
+</body>
+
+</html>
